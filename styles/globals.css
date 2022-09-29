@@ -8,6 +8,8 @@ body {
 
 body {
   padding: 20px;
+  background: linear-gradient(145deg, rgba(2,0,36,1) 0%, rgba(0,172,255,1) 100%) no-repeat;
+  height: 100vh;
 }
 
 /* a { */
@@ -25,7 +27,7 @@ span {
   padding: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -33,4 +35,4 @@ span {
     color: white;
     background: black;
   }
-}
+} */

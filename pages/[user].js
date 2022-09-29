@@ -1,5 +1,4 @@
-import { useRouter } from 'next/router'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/User.module.css'
 import Image from 'next/image'
 import fs from 'fs'
 
@@ -44,7 +43,7 @@ export default function User({user}) {
       <div className={styles.card}>
         <div>
           <Image className={styles.card_image}
-            src={`${user.github}.png`} width={80} height={80} alt={user.name} />
+            src={`${user.github}.png`} width={150} height={150} alt={user.name} />
         </div>
         <h2>{user.nome}</h2>
         <p>{user.email}</p>

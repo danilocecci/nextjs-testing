@@ -1,11 +1,26 @@
+.page {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 60px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 24px;
+  color: white;
+  filter: drop-shadow(0 0 5px aqua);
+  letter-spacing: 10px;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
+  gap: 8px;
 }
 
 .card {
-  background-color: #333;
+  background-color: hsla(0, 0%, 0%, 0.2);
   color: white;
   padding: 20px;
   text-align: center;
@@ -13,15 +28,18 @@
   gap: 10px;
   border-radius: 8px;
   width: 250px;
+  transition: background-color 500ms;
 }
 
 .card:hover {
   cursor: pointer;
+  background-color: hsla(0, 0%, 0%, 0.5);
 }
 
 .card_image {
   border-radius: 50%;
   border: 2px solid aqua !important;
+  box-shadow: 0 0 5px aqua !important;
 }
 
 .card a {

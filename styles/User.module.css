@@ -1,0 +1,22 @@
+.card {
+  background-color: hsla(0, 0%, 0%, 0.2);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: grid;
+  gap: 10px;
+  border-radius: 8px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card_image {
+  border-radius: 50%;
+  border: 2px solid aqua !important;
+}
+
+.card a {
+  color:aqua;
+  font-size: 12px;
+}
+

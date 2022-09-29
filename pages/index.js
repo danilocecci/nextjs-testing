@@ -27,8 +27,8 @@ export async function getStaticProps() {
 
 export default function Home({data}) {
   return (
-    <div>
-    <h1>Lista de devs</h1>
+    <div className={styles.page}>
+    <h1 className={styles.title}>🚀 DevExplorer </h1>
       <div className={styles.cards}>
         {data.map((user, index) => (
           <Link key={index} href={`/${user.github.split("/")[3]}`}>
@@ -38,7 +38,7 @@ export default function Home({data}) {
                     src={`${user.github}.png`} width={80} height={80} alt={user.name} />
                 </div>
                 <h2>{user.nome}</h2>
-                <p>Cidade - Estado</p>
+                {/* <p>Cidade - Estado</p> */}
               </div>
           </Link>
         ))}
