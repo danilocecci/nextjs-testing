@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 import fs from 'fs'
 
@@ -12,7 +13,7 @@ export async function getStaticProps() {
     return (JSON.parse(json))
   })
   
-  console.log(data)
+  console.log("data:", data)
   
   function listFiles() {
     const files = fs.readdirSync("database")
@@ -30,15 +31,16 @@ export default function Home({data}) {
     <h1>Lista de devs</h1>
       <div className={styles.cards}>
         {data.map((user, index) => (
-          <div className={styles.card} key={index}>
-            <div>
-            <Image className={styles.card_image}
-               src={`${user.github}.png`} width={80} height={80} alt={user.name} />
-            </div>
-            <h2>{user.nome}</h2>
-            <p>{user.email}</p>
-            <a href={user.github}>{user.github}</a>
-          </div>
+          <Link key={index} href={`/${user.github.split("/")[3]}`}>
+              <div className={styles.card}>
+                <div>
+                  <Image className={styles.card_image}
+                    src={`${user.github}.png`} width={80} height={80} alt={user.name} />
+                </div>
+                <h2>{user.nome}</h2>
+                <p>Cidade - Estado</p>
+              </div>
+          </Link>
         ))}
       </div>
     </div>

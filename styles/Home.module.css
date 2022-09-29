@@ -1,5 +1,6 @@
 .cards {
   display: flex;
+  flex-wrap: wrap;
   gap: 4px;
 }
 
@@ -12,6 +13,10 @@
   gap: 10px;
   border-radius: 8px;
   width: 250px;
+}
+
+.card:hover {
+  cursor: pointer;
 }
 
 .card_image {
