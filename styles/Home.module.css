@@ -60,7 +60,7 @@
 .card_image {
   border-radius: 50%;
   border: 2px solid rgb(0, 158, 194) !important;
-  box-shadow: 0 0 5px white !important;
+  /* box-shadow: 0 0 5px white !important; */
   transition: 500ms;
 }
 
