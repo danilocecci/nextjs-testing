@@ -57,25 +57,49 @@ export default function User({user}) {
         {user.email &&
           <div className={styles.link}>
             <p>Email</p>
-            <a href={`mailto:${user.email}`} target="_blank">{user.email}</a>
+            <a 
+              href={`mailto:${user.email}`} 
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {user.email}
+            </a>
           </div>}
 
         {user.github &&
           <div className={styles.link}>
             <p>Github</p>
-            <a href={user.github} target="_blank">{user.github}</a>
+            <a 
+            href={user.github} 
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+              {user.github}
+            </a>
           </div>}
 
         {user.linkedin_url &&
           <div className={styles.link}>
             <p>Linkedin</p>
-            <a href={user.linkedin_url} target="_blank">{user.linkedin_url}</a>
+            <a 
+              href={user.linkedin_url} 
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {user.linkedin_url}
+            </a>
           </div>}
 
         {user.rocketseat_profile &&
           <div className={styles.link}>
             <p>Rocketseat</p>
-            <a href={user.rocketseat_profile} target="_blank">{user.rocketseat_profile}</a>
+            <a 
+              href={user.rocketseat_profile} 
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {user.rocketseat_profile}
+            </a>
           </div>}
 
       </div>
