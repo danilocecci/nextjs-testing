@@ -1,13 +1,26 @@
 .card {
-  background-color: hsla(0, 0%, 0%, 0.2);
   color: white;
   padding: 20px;
   text-align: center;
-  display: grid;
-  gap: 10px;
-  border-radius: 8px;
-  width: 80%;
   margin: 0 auto;
+  display: grid;
+  gap: 40px;
+  max-width: 800px;
+}
+
+.user_info h2 {
+  margin-top: 10px;
+}
+
+.links {
+  gap: 14px;
+  display: grid;
+}
+
+.link {
+  padding: 10px;
+  background-color: hsla(0, 0%, 0%, 0.2);
+  border-radius: 8px;
 }
 
 .card_image {
@@ -17,6 +30,7 @@
 
 .card a {
   color:aqua;
-  font-size: 12px;
+  font-size: 14px;
+  text-decoration: none;
 }
 

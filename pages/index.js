@@ -32,7 +32,7 @@ export default function Home({data}) {
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </Head>
-    <h1 className={styles.title}>🚀 DevExplorer </h1>
+    <h1 className={styles.title}>🚀 <span>DEV</span>EXPLORER </h1>
       <div className={styles.cards}>
         {data.map((user, index) => (
           <Link key={index} href={`/${user.github.split("/")[3]}`}>
@@ -41,7 +41,7 @@ export default function Home({data}) {
                   <Image className={styles.card_image}
                     src={`${user.github}.png`} width={80} height={80} alt={user.name} />
                 </div>
-                <h2>{user.nome}</h2>
+                <h2>{user.name}</h2>
                 {/* <p>Cidade - Estado</p> */}
               </div>
           </Link>

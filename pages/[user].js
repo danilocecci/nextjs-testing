@@ -41,13 +41,34 @@ export default function User({user}) {
   return (
     <>
       <div className={styles.card}>
-        <div>
-          <Image className={styles.card_image}
-            src={`${user.github}.png`} width={150} height={150} alt={user.name} />
+        <div className={styles.user_info}>
+          <Image 
+            className={styles.card_image} 
+            src={`${user.github}.png`} 
+            width={150} height={150} 
+            alt={user.name}
+          />
+          <h2>{user.name}</h2>
+          <p>{user.email}</p>
         </div>
-        <h2>{user.nome}</h2>
-        <p>{user.email}</p>
-        <a href={user.github}>{user.github}</a>
+
+        <div className={styles.links}>
+          <div className={styles.link}>
+            <p>Github:</p>
+            <a href={user.github}>{user.github}</a>
+          </div>
+
+          <div className={styles.link}>
+            <p>Linkedin:</p>
+            <a href={user.linkedin_url}>{user.linkedin_url}</a>
+          </div>
+
+          <div className={styles.link}>
+            <p>Rocketseat:</p>
+            <a href={user.rocketseat_profile}>{user.rocketseat_profile}</a>
+          </div>
+        </div>
+
       </div>
     </>
   )

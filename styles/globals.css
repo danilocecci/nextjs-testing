@@ -1,20 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Work+Sans&display=swap');
 
-* {
+*,
+*:after,
+*:before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  font-size: 6.25%;
 }
 
 html {
   height: 100vh;
   width: 100%;
-  /* background-color: aqua; */
+  font-family: 'Work Sans', sans-serif;
 }
 
 body {
-  min-width: 360px;
-  font-family: 'Poppins', sans-serif;
+  font-size: 16rem;
+  min-height: 100%;
+  background-image: linear-gradient(135deg, rgba(2,0,36,1), rgba(0,172,255,1));
+  background-color: rgba(0,172,255,1);
 }
 
 body:after {
@@ -22,32 +31,14 @@ body:after {
   position: fixed;
   top: 0;
   bottom: 0;
+  height: 100%;
   width: 100%;
   z-index: -1;
   background-image: linear-gradient(135deg, rgba(2,0,36,1), rgba(0,172,255,1));
 }
 
-body {
-  /* background-image: linear-gradient(135deg, rgba(2,0,36,1), rgba(0,172,255,1));
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: aqua; */
-  min-height: 100%;
-  width: 100%;
-  min-width: 360px;
-}
-
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-} */
 body > div {
-  width: 80%;
+  /* width: 80%; */
   margin: 0 auto;
 }
 

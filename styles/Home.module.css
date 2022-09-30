@@ -1,19 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,400&display=swap');
+
 .page {
   padding: 20px;
 }
 
 .title {
+  font-family: 'Lora', serif;
   text-align: center;
   width: 100%;
   margin-bottom: 24px;
   color: white;
   filter: drop-shadow(0 0 5px aqua);
   letter-spacing: 10px;
+  font-size: clamp(12rem, 5vw, 60rem);
+  font-weight: 700;
+}
+
+.title span {
+  font-weight: 400;
+  opacity: 0.5;
 }
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 8px;
 }
 
@@ -28,6 +39,12 @@
   width: 100%;
   transition: background-color 500ms;
   margin: auto;
+}
+
+.card h2 {
+  font-size: clamp(12rem, 3vw, 16rem);
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .card:hover {

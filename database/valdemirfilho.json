@@ -1,5 +1,9 @@
 {
-  "nome": "Valdemir Filho",
+  "name": "Valdemir Filho",
   "email": "filhux@gmail.com",
-  "github": "https://github.com/valdemirfilho"
+  "city": "Sobral",
+  "state": "Ceará",
+  "github": "https://github.com/valdemirfilho",
+  "linkedin_url": "https://www.linkedin.com/in/valdemirfilho/",
+  "rocketseat_profile": "https://app.rocketseat.com.br/me/valdemir-filho"
 }
