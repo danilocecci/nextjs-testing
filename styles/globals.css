@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,20 +9,25 @@
 html {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(135deg, rgba(2,0,36,1), rgba(0,172,255,1));
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: aqua;
+  /* background-color: aqua; */
+}
+
+body {
   min-width: 360px;
+  font-family: 'Poppins', sans-serif;
+}
+
+body:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(135deg, rgba(2,0,36,1), rgba(0,172,255,1));
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-body {
-  padding: 20px;
   /* background-image: linear-gradient(135deg, rgba(2,0,36,1), rgba(0,172,255,1));
   background-repeat: no-repeat;
   background-size: cover;
