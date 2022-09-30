@@ -1,30 +1,33 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-body {
-  padding: 20px;
-  background: linear-gradient(145deg, rgba(2,0,36,1) 0%, rgba(0,172,255,1) 100%) no-repeat;
-  height: 100vh;
-}
-
-/* a { */
-/*   color: inherit; */
-/*   text-decoration: none; */
-/* } */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-span {
-  padding: 10px;
+html {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(135deg, rgba(2,0,36,1), rgba(0,172,255,1));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: aqua;
+  min-width: 360px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+  padding: 20px;
+  /* background-image: linear-gradient(135deg, rgba(2,0,36,1), rgba(0,172,255,1));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: aqua; */
+  min-height: 100%;
+  width: 100%;
+  min-width: 360px;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -34,5 +37,19 @@ span {
   body {
     color: white;
     background: black;
+  }
+} */
+body > div {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* @media (max-width: 600px) {
+  .page {
+    width: 600px;
+  }
+
+  .card {
+    width: 100px;
   }
 } */

@@ -28,6 +28,10 @@ export async function getStaticProps() {
 export default function Home({data}) {
   return (
     <div className={styles.page}>
+    <Head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </Head>
     <h1 className={styles.title}>🚀 DevExplorer </h1>
       <div className={styles.cards}>
         {data.map((user, index) => (
