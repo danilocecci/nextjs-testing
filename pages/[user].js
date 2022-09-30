@@ -53,20 +53,23 @@ export default function User({user}) {
         </div>
 
         <div className={styles.links}>
+          { user.github && 
           <div className={styles.link}>
             <p>Github:</p>
             <a href={user.github}>{user.github}</a>
-          </div>
+          </div> }
 
+          { user.linkedin_url && 
           <div className={styles.link}>
             <p>Linkedin:</p>
             <a href={user.linkedin_url}>{user.linkedin_url}</a>
-          </div>
+          </div> }
 
+          { user.rocketseat_profile &&
           <div className={styles.link}>
             <p>Rocketseat:</p>
             <a href={user.rocketseat_profile}>{user.rocketseat_profile}</a>
-          </div>
+          </div> }
         </div>
 
       </div>
