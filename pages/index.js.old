@@ -7,16 +7,16 @@ import fs from 'fs'
 
 export async function getStaticProps() {
   const users = listFiles()
-
-  const data = await Promise.all(users.map(async (item) => {
-    const user = await import(`../users/${item}`)
-    return user.data
-  }))
+  
+  const data = users.map((item) => {
+    const json = fs.readFileSync(`database/${item}`)
+    return (JSON.parse(json))
+  })
   
   console.log("data:", data)
   
   function listFiles() {
-    const files = fs.readdirSync("users")
+    const files = fs.readdirSync("database")
     return files
   }
 
@@ -29,6 +29,7 @@ export default function Home({data}) {
   return (
     <div className={styles.page}>
     <Head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </Head>
     <h1 className={styles.title}>🚀 <span>DEV</span>EXPLORER </h1>

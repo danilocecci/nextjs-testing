@@ -4,7 +4,7 @@
   text-align: center;
   margin: 0 auto;
   display: grid;
-  gap: 40px;
+  gap: 20px;
   max-width: 800px;
 }
 
@@ -12,15 +12,37 @@
   margin-top: 10px;
 }
 
-.links {
-  gap: 14px;
+.links,
+.challenges {
+  gap: 10px;
   display: grid;
 }
+
 
 .link {
   padding: 10px;
   background-color: hsla(0, 0%, 0%, 0.2);
   border-radius: 8px;
+}
+
+.challenges .link {
+  border-radius: 0px;
+}
+
+.challenges .link:nth-of-type(1) {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.challenges .link:nth-last-of-type(1) {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.link span {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
 }
 
 .card_image {
